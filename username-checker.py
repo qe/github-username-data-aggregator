@@ -1,7 +1,7 @@
 # Two-Letter Username Availability Checker by @ismodes
 
 # Choose whichever website to scrape
-rootURL = 'https://github.com/'
+rootURL = 'https://instagram.com/'
 
 # Requests code from webpage
 import requests
@@ -31,12 +31,15 @@ attached = attach(rootURL, keywords)
 
 # Iterate
 
-
+# DECIDE if you should structure the iterator or code the soup extractor
 
 # BeautifulSoup scrape content and set Boolean depending on if there
 
+
+# How to scrape at a reasonable rate
 # create custom delays to slow down web scraping to prevent being blocked (ask about custom delays in webscraping in StackOverflow)
-# [EXPLAIN HOW YOU HAVE LOOKED BUT COULDNT FIND HOW TO CUSTOM DELAY] Im not looking necessarily looking for a code specific response, but rather for someone to point me in the right direction of what  
+# [EXPLAIN HOW YOU HAVE LOOKED BUT COULDNT FIND HOW TO CUSTOM DELAY] Im not looking necessarily looking for a code specific response, but rather for someone to point me in the right direction of what
+
 
 # save into csv with the following columns: (user, boolean)
 
