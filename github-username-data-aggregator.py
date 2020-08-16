@@ -26,7 +26,10 @@ from bs4 import BeautifulSoup
 # Set repeat to 1 for all 26 letters in a list   OR   Set repeat to 2 for all 676 permutations of two letters in a list
 from itertools import product
 from string import ascii_lowercase
-keywords = [''.join(i) for i in product(ascii_lowercase, repeat = 2)]
+keywords = [''.join(i) for i in product(ascii_lowercase, repeat = 1)]
+
+# keywords = ['a', 'b', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
 
 # Format all 676 permutations into website url's for each user
 def attach(rootURL, keywords):
@@ -40,74 +43,121 @@ def attach(rootURL, keywords):
 attached = attach(rootURL, keywords)
 
 # Open CSV document
-csvFileOpen = open('usernameData.csv', 'w')
+csvFileOpen = open('/Users/alexismodes/Documents/GitHub/github-username-data-aggregator/usernameData.csv', 'w')
 csvWriter = csv.writer(csvFileOpen)
-csvWriter.writerow(['username', 'availability', 'join date', 'active', 'location', 'work'])
+# csvWriter.writerow(['username', 'availability', 'join date', 'active', 'location', 'work'])
+# csvWriter.writerow(['username', 'availability', 'join date', 'location', 'work'])
+csvWriter.writerow(['username', 'availability', 'type', 'name','location', 'work'])
+
 
 # print(attached.index('https://github.com/qe'))
 
-print(attached.index('https://github.com/yg'))
 
 # print(attached[675])
 
 
-source = requests.get(attached[2]).text
 
-# source = requests.get('https://github.com/c').text    # for error message
 
-soup = BeautifulSoup(source, 'lxml')
-# print(soup.prettify())
+for i in range(len(attached)):
+    source = requests.get(attached[i]).text
+    soup = BeautifulSoup(source, 'lxml')
+    # print(soup.prettify())
+    # print()
+    # print()
+    # print()
+    # print()
+    # source = requests.get('https://github.com/c').text    # for error message
 
-try:
+
+
+
     content = soup.find('div', class_='application-main')     # maybe add .text to the end
-
+    # username2 = content.find('span', class_='p-nickname vcard-username d-block', itemprop='additionalName').text
+    # print(username2)
+    # print()
 
 # csvWriter.writerow([headline, summary, ytLink])
+
+    # Username
+
+    # Users
     try:
-        # Username
-        username = content.find('span', itemprop='additionalName').text
+        username = content.find('span', class_='p-nickname vcard-username d-block', itemprop='additionalName').text
         print(username)
-
-        # REPARAR
-        # Availability
-        try:
-            availability = content.find('img', alt='404 “This is not the web page you are looking for”')
-            availability = True
-        except:
-            availability = False
-        print(availability)
-
-        # Join date
+        print('We could set the username correctly')
+        type = 'User'
+        name = content.find('span', class_='p-name vcard-fullname d-block overflow-hidden', itemprop='name').text
+    except:
         pass
 
-        # Any repos?
-
-        # Location
-        try:
-            location = content.find('span', class_='p-label').text
-        except:
-            location = 'Unknown location'
-        print(location)
-
-        # Work
-        try:
-            work = content.find('span', class_='p-org').text
-        except:
-            work = 'Unknown work'
-        print(work)
-
-
-
-
+    # Orgs
+    try:
+        name = content.find('h1', class_='text-gray-dark lh-condensed mb-1 mb-md-2').text
+        print(name)
+        type = 'Organization'
     except:
-        username = 'Link does NOT load to a user'
-        print(username)
+        pass
+
+    # 404
+    try:
+        fourOfour = content.find('img', alt='404 “This is not the web page you are looking for”').text
+        name = '404'
+        type = '404'
+    except:
+        if (type != 'User') and (type != 'Organization') and (type != '404'):
+            type = 'Redirect'
+        else:
+            pass
+
+    # Redirect
 
 
+    # print(username)
 
+    # REPARAR
     # Availability
+    try:
+        availability = content.find('img', alt='404 “This is not the web page you are looking for”').text
+        availability = True
+    except:
+        availability = False
+    # print(availability)
+
     # Join date
-    # Active check the 'user ha s_ repositories message'
+    # try:
+    #     joinDate = content.find_all('a', class_='js-year-link filter-item px-3 mb-2 py-2 selected ').text[-1]
+    # except:
+    #     joinDate = None
+
+    # Any repos?
+    # Include later
+
+    # Location
+    try:
+        location = content.find('span', class_='p-label').text
+    except:
+        location = None
+        # location = 'Unknown location'
+    # print(location)
+
+    # Work
+    try:
+        work = content.find('span', class_='p-org').text
+    except:
+        work = None
+        # work = 'Unknown work'
+    # print(work)
+
+
+    # csvWriter.writerow([username, availability, joinDate, location, work])
+    csvWriter.writerow([keywords[i], availability, type, name, location, work])
+
+
+
+
+        # except:
+        #     print('Redirect')
+        #     csvWriter.writerow([keywords[i], True, None, None, None])
 
 
 
@@ -115,8 +165,34 @@ try:
 
 
 
-except:
-    print('Error in parsing file')
+
+
+
+            # print('Link does NOT load to a user')
+
+
+            # username            # change to iterator
+            # print('Username:{}, Availability:{}, joinDate:{}, Active:{} {} {}'.format(username, availability, joinDate, active, location, work))
+            # username = 'Link does NOT load to a user'
+            # ['username', 'availability', 'join date', 'active', 'location', 'work']
+
+
+
+
+
+        # Availability
+        # Join date
+        # Active check the 'user ha s_ repositories message'
+
+
+
+
+
+
+
+    # except:
+    #     print('Error in parsing file')
+csvFileOpen.close()
 
 
 
