@@ -1,37 +1,51 @@
-# Github Username Data Aggregator by @qe
+# github-username-data-aggregator
+# Custom delay script to not overload the website!!!
+# To-Do-List to Add: 'join date', 'amount of repositories',
 
-# M E T H O D S
-# Extract info on active repositories? (bool), has a name? (bool), location (e.g. San Francisco), work (@facebook)
-
-# G O A L S
-# Username Availability (e.g. default, 404, or redirect), Average followers for 1-letter/2-letter accounts, MAYBE when the accout joined?, most common locations
-
-
-# Choose whichever website to scrape
-rootURL = 'https://github.com/'
-
-# Requests code from webpage
+# Imports 'requests' module to allow HTTP requests
 import requests
 
-# Import CSV library
-import csv
+# Imports the 'time' module
+import time
 
-# BeautifulSoup4 library
+# Import randrange function from the 'random' module
+from random import randrange
+
+# Assigns the string of the path of the current directory to the variable 'path'
+from pathlib import Path
+path = str(Path(__file__).parent.absolute())
+
+# Installs BeautifulSoup4, a web scaping library
 import subprocess
 import sys
 def install(package):
     subprocess.check_call([sys.executable, '-m', 'pip', 'install', bs4])
 from bs4 import BeautifulSoup
 
-# Set repeat to 1 for all 26 letters in a list   OR   Set repeat to 2 for all 676 permutations of two letters in a list
+# Set the standard root URL for accessing users profiles
+rootURL = 'https://github.com/'
+
+# Set the username letter length
+# numLetters = int(input('Enter the username letter length you want data on (e.g. 1 --> one-letter handles, 2--> two-letter handles..): '))
+numLetters = 1
+
+# Creates a CSV file in the current working directory
+import csv
+csvLabel = '1LetterGitHubUsernamesTest'
+csvName = '/' + csvLabel + '.csv'
+# csvName = '/' + input('Name the CSV file with the username data: ') + '.csv'
+csvFile = path + csvName
+csvFileOpen = open(csvFile, 'w')
+csvWriter = csv.writer(csvFileOpen)
+csvWriter.writerow(['username', 'availability', 'type', 'location', 'work'])
+
+# Set 'repeat' to 1 for all 26 letters in a list   OR   Set repeat to 2 for all 676 permutations of two-letters in a list
+# OR set 'repeat' to 3 for all 17576 permutations of three-letters...
 from itertools import product
 from string import ascii_lowercase
-keywords = [''.join(i) for i in product(ascii_lowercase, repeat = 1)]
+keywords = [''.join(i) for i in product(ascii_lowercase, repeat = numLetters)]
 
-# keywords = ['a', 'b', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-
-
-# Format all 676 permutations into website url's for each user
+# Append root URL with keywords representing each user's profile links
 def attach(rootURL, keywords):
     attached = []
     for i in keywords:
@@ -42,204 +56,69 @@ def attach(rootURL, keywords):
     return attached
 attached = attach(rootURL, keywords)
 
-# Open CSV document
-csvFileOpen = open('/Users/alexismodes/Documents/GitHub/github-username-data-aggregator/usernameData.csv', 'w')
-csvWriter = csv.writer(csvFileOpen)
-# csvWriter.writerow(['username', 'availability', 'join date', 'active', 'location', 'work'])
-# csvWriter.writerow(['username', 'availability', 'join date', 'location', 'work'])
-csvWriter.writerow(['username', 'availability', 'type', 'name','location', 'work'])
-
-
-# print(attached.index('https://github.com/qe'))
-
-
-# print(attached[675])
-
-
-
-
 for i in range(len(attached)):
-    source = requests.get(attached[i]).text
+    randomDelay = randrange(11,19)
+
+    theURL = requests.get(attached[i])
+
+    source = requests.get(attached[i],time.sleep(randomDelay)).text
     soup = BeautifulSoup(source, 'lxml')
-    # print(soup.prettify())
-    # print()
-    # print()
-    # print()
-    # print()
-    # source = requests.get('https://github.com/c').text    # for error message
+    # head = soup.find('div', class_='application-main')
+    content = soup.find('div', class_='application-main')
 
+    # Default values
+    username = None
+    Organization = None
+    fourOfour = None
+    type = None
+    availability = False
 
-
-
-    content = soup.find('div', class_='application-main')     # maybe add .text to the end
-    # username2 = content.find('span', class_='p-nickname vcard-username d-block', itemprop='additionalName').text
-    # print(username2)
-    # print()
-
-# csvWriter.writerow([headline, summary, ytLink])
-
-    # Username
-
-    # Users
+    # User
     try:
         username = content.find('span', class_='p-nickname vcard-username d-block', itemprop='additionalName').text
-        print(username)
-        print('We could set the username correctly')
         type = 'User'
-        name = content.find('span', class_='p-name vcard-fullname d-block overflow-hidden', itemprop='name').text
     except:
         pass
 
-    # Orgs
+    # Organization
     try:
-        name = content.find('h1', class_='text-gray-dark lh-condensed mb-1 mb-md-2').text
-        print(name)
+        print(keywords[i])
+        org = content.find('h1', class_='text-gray-dark lh-condensed mb-1 mb-md-2').text
         type = 'Organization'
+    except:
+        pass
+
+    # Redirect
+    try:
+        if theURL.url != attached[i]:
+            type = 'Redirect'
     except:
         pass
 
     # 404
     try:
-        fourOfour = content.find('img', alt='404 “This is not the web page you are looking for”').text
-        name = '404'
-        type = '404'
+        if (type == None):
+            type = '404'
     except:
-        if (type != 'User') and (type != 'Organization') and (type != '404'):
-            type = 'Redirect'
-        else:
-            pass
+        pass
 
-    # Redirect
-
-
-    # print(username)
-
-    # REPARAR
     # Availability
-    try:
-        availability = content.find('img', alt='404 “This is not the web page you are looking for”').text
+    if type == '404':
         availability = True
-    except:
-        availability = False
-    # print(availability)
-
-    # Join date
-    # try:
-    #     joinDate = content.find_all('a', class_='js-year-link filter-item px-3 mb-2 py-2 selected ').text[-1]
-    # except:
-    #     joinDate = None
-
-    # Any repos?
-    # Include later
 
     # Location
     try:
         location = content.find('span', class_='p-label').text
     except:
         location = None
-        # location = 'Unknown location'
-    # print(location)
 
     # Work
     try:
         work = content.find('span', class_='p-org').text
     except:
         work = None
-        # work = 'Unknown work'
-    # print(work)
 
+    print(type)
+    csvWriter.writerow([keywords[i], availability, type, location, work])
 
-    # csvWriter.writerow([username, availability, joinDate, location, work])
-    csvWriter.writerow([keywords[i], availability, type, name, location, work])
-
-
-
-
-        # except:
-        #     print('Redirect')
-        #     csvWriter.writerow([keywords[i], True, None, None, None])
-
-
-
-
-
-
-
-
-
-
-            # print('Link does NOT load to a user')
-
-
-            # username            # change to iterator
-            # print('Username:{}, Availability:{}, joinDate:{}, Active:{} {} {}'.format(username, availability, joinDate, active, location, work))
-            # username = 'Link does NOT load to a user'
-            # ['username', 'availability', 'join date', 'active', 'location', 'work']
-
-
-
-
-
-        # Availability
-        # Join date
-        # Active check the 'user ha s_ repositories message'
-
-
-
-
-
-
-
-    # except:
-    #     print('Error in parsing file')
 csvFileOpen.close()
-
-
-
-#
-# for i in attached:
-#     eachUser = requests.get()
-
-
-
-
-
-
-# Iterate
-
-# DECIDE if you should structure the iterator or code the soup extractor
-
-# BeautifulSoup scrape content and set Boolean depending on if there
-
-
-# How to scrape at a reasonable rate
-# create custom delays to slow down web scraping to prevent being blocked (ask about custom delays in webscraping in StackOverflow)
-# [EXPLAIN HOW YOU HAVE LOOKED BUT COULDNT FIND HOW TO CUSTOM DELAY] Im not looking necessarily looking for a code specific response, but rather for someone to point me in the right direction of what
-
-
-# save into csv with the following columns: (user, boolean)
-
-
-
-
-
-
-
-
-
-# print(attached)                   # prints all permutation
-
-
-
-
-
-
-
-
-# Goal 1: check GitHub username availability (if it loads a normal usernamePage  OR  a 404notFound/Other)
-# Goal 2: check when each of the two letter usernames were created
-#
-#
-# x1. Generate list of all 256 permutations of two letters
-# x2. Append to github root domain 'https://github.com/'
-# 3. CHECK STACKOVERFLOW FOR HOW TO ITERATE

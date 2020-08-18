@@ -1,0 +1,27 @@
+username,availability,type,location,work
+a,False,User,"Ho Chi Minh, Vietnam",@winstrike
+b,False,User,"Seattle, WA",
+c,False,Redirect,,
+d,False,User,San Francisco,Pivotal
+e,False,User,,
+f,False,User,"Istanbul, Turkey",Toolio
+g,False,Organization,,
+h,False,User,San Francisco,Senior Software Engineer at Waymo
+i,False,User,brooklyn,
+j,False,User,"San Diego, CA",@DapperToast
+k,False,User,San Francisco,Zoox
+l,False,User,,
+m,False,User,San Francisco,Automattic / WordPress
+n,False,User,California,
+o,False,User,"Amsterdam, Nederland",Azerion
+p,False,User,NYC,
+q,False,User,"New York, NY",@DataDog 
+r,False,User,"San Francisco, CA",
+s,False,User,"Amsterdam, Netherlands",@bookingcom
+t,False,User,,
+u,False,Organization,,
+v,False,User,"New Brunswick, NJ",
+w,True,404,,
+x,False,User,New York City,Oden Technologies
+y,False,User,,
+z,False,User,everywhere,
