@@ -1,6 +1,7 @@
-# github-username-data-aggregator
-# Custom delay script to not overload the website!!!
-# To-Do-List to Add: 'join date', 'amount of repositories',
+# github-username-data-aggregator by Alejandro Ismodes
+# DISCLAIMER: I strongly recommend to use GitHub's API instead of manually scraping the username data. Remember to respect GitHub's crawl delay guidelines,
+# as per https://github.com/robots.txt, in order to not overload the website with requests!
+# To-Do-List: 'join date', 'amount of repositories', 'website links' ?
 
 # Imports 'requests' module to allow HTTP requests
 import requests
