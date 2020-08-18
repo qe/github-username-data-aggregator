@@ -1,0 +1,677 @@
+username,availability,type,location,work
+aa,False,User,,
+ab,False,User,"Washington, D.C.",U.S. Digital Service @usds
+ac,False,User,,
+ad,False,User,"Russia, Saint-Petersburg",
+ae,False,User,,
+af,False,User,"Victoria, BC",
+ag,False,User,"Munich, Germany",@salesforce
+ah,False,User,,
+ai,False,User,"New York, USA",@evilmartians 
+aj,False,User,Bangalore,
+ak,False,User,Kiev,
+al,False,User,Dublin,
+am,False,User,"Barcelona, Spain",@newrelic 
+an,False,User,United States,
+ao,False,User,127.0.0.1,
+ap,False,User,,
+aq,False,User,,
+ar,False,User,Montevideo/Uruguay,jPOS.org
+as,False,User,,
+at,False,User,,Evil Martians
+au,False,User,,
+av,False,User,,
+aw,False,User,"海の前, Japan",On-Prem
+ax,False,User,"Milan, Italy.",
+ay,False,User,California,
+az,False,User,"Poznan, Poland",Ecommerce Poland Expo
+ba,False,User,Sweden,
+bb,False,User,"Leipzig, Germany",Topic Maps Lab
+bc,False,User,California,@Kaspect @usc-bbdl
+bd,False,User,,
+be,False,User,Rio,
+bf,False,User,,
+bg,False,User,"Halifax, NS, Canada",Dymaxion Research Ltd.
+bh,False,User,Berlin,Botanicly GmbH
+bi,False,Organization,,
+bj,False,User,,
+bk,False,User,Iceland,
+bl,False,User,"San Francisco, CA",Yelp
+bm,False,User,"Atlanta, GA",
+bn,False,User,,
+bo,False,User,Netherlands,YEONG Development
+bp,False,Organization,,
+bq,False,Organization,,
+br,False,Organization,,
+bs,False,User,"San Fransico, CA",
+bt,False,User,"Melbourne, Australia",@Secoura
+bu,False,User,"Taipei, Taiwan",@hax4 
+bv,False,User,"GE, CH",
+bw,False,User,TX -> MA -> CA,@ConduitAnalytics @BetterJournalism @cs50
+bx,False,User,,
+by,False,User,,
+bz,False,User,,
+ca,False,User,,
+cb,False,User,Los Angeles,
+cc,False,User,Mountain View,Google
+cd,False,User,"Dortmund, Germany",
+ce,False,User,USA,Creation Engines
+cf,False,User,"Shenzhen, China",Dreamwalk
+cg,False,User,Shanghai,
+ch,False,User,Ukraine,
+ci,False,User,,
+cj,False,User,,
+ck,False,User,United States,
+cl,False,User,,
+cm,False,User,"London, United Kingdom",@vaimo
+cn,False,Organization,,
+co,False,User,"~Stockholm, Sweden",Netlight
+cp,False,User,"Portland, OR.",@clearbit
+cq,False,User,,
+cr,False,User,Berlin,@gesundheitscloud
+cs,False,User,"Munich, Germany",BugFactory
+ct,False,User,,
+cu,False,User,"Ann Arbor, MI",Bityard Industries
+cv,False,User,Vancouver,@segmentio
+cw,False,User,"Evansville, WI",
+cx,False,User,,
+cy,False,User,,
+cz,False,User,New York,Hudl
+da,False,User,,
+db,False,User,,
+dc,False,User,Vienna,Frequentis
+dd,False,User,,
+de,False,User,,
+df,False,User,San Francisco,
+dg,False,User,,Nette Foundation
+dh,False,Organization,,
+di,False,User,"Austin, TX",@google
+dj,False,User,,
+dk,False,User,,
+dl,False,User,,
+dm,False,User,"London & Peterborough, UK",Openlab Ltd
+dn,False,User,,
+do,False,Organization,,
+dp,False,User,,
+dq,False,User,,
+dr,False,User,"Lexington, KY",
+ds,False,User,,
+dt,False,User,NYC,Cockroach Labs Inc
+du,False,User,,
+dv,False,User,Belgium,Crowdway
+dw,False,User,,
+dx,False,User,Mexico City,Formiik
+dy,False,User,Montréal / Saint-Petersburg,@Mobeewave
+dz,False,User,"New York, New York",Mailchimp
+ea,False,User,,
+eb,False,User,,
+ec,False,User,"Kiev, Ukraine",@rubykube @helios-technologies 
+ed,False,User,,
+ee,False,Organization,,
+ef,False,User,,
+eg,False,User,Earth,
+eh,False,User,,
+ei,False,User,,
+ej,False,User,New York,
+ek,False,User,Palo Alto,Intuit
+el,False,User,"Ankara, Turkey",Unscrambl Inc
+em,False,User,San Francisco,Vectr
+en,False,User,"Beijing, China",
+eo,False,User,Istanbul,
+ep,False,Organization,,
+eq,False,User,,
+er,False,User,,
+es,False,User,"Toronto, Canada",
+et,False,User,Colorado,
+eu,False,Organization,,
+ev,False,Organization,,
+ew,False,User,,
+ex,False,User,Lima - Peru,
+ey,False,Organization,,
+ez,False,Organization,,
+fa,False,User,,
+fb,False,User,"Kaiserslautern, Germany",
+fc,False,User,"San Francisco, CA",
+fd,False,User,Belgium,Mr. Henry
+fe,False,User,Konya / Turkey,Furkan Erkul
+ff,False,Organization,,
+fg,False,User,"Istanbul, Turkey",
+fh,False,User,"Berlin, Germany",@aws 
+fi,False,User,,
+fj,False,User,"Charlottesville, VA",
+fk,False,User,"Frankfurt am Main, Germany",@gatsbyjs 
+fl,False,User,Germany,@Capgemini @devonfw 
+fm,False,User,,
+fn,False,User,,
+fo,False,User,,
+fp,False,User,,
+fq,False,User,,
+fr,False,User,,
+fs,False,Organization,,
+ft,False,User,AC,
+fu,False,User,"Heidelberg, BW, Germany",
+fv,False,User,,
+fw,False,User,,
+fx,False,User,"Grass Valley, CA",Popdog
+fy,False,User,,
+fz,False,User,,
+ga,False,Organization,,
+gb,False,User,"Palo Alto, CA",Salesforce
+gc,False,User,,
+gd,False,User,Berlin,Samba Team
+ge,False,User,"Chapel Hill, NC",
+gf,False,User,,
+gg,False,User,,
+gh,False,User,,
+gi,False,User,"San Francisco, CA",
+gj,False,User,nyc,@osohq 
+gk,False,User,,
+gl,False,User,"Lille, France",
+gm,False,User,,
+gn,False,User,Arizona,
+go,False,User,"Tokyo, Japan",
+gp,False,User,,
+gq,False,User,,
+gr,False,User,Moscow,
+gs,False,User,Hamburg,Yelp
+gt,False,Organization,,
+gu,False,User,,
+gv,False,User,,
+gw,False,User,,
+gx,False,User,,
+gy,False,User,"Toronto, Ontario",Shopify
+gz,False,User,Bay Area,VMware Research Group
+ha,False,Organization,,
+hb,False,User,Germany,
+hc,False,User,,
+hd,False,User,"San Francisco, CA",
+he,False,User,,
+hf,False,User,"Skopje, Republic of North Macedonia",@hfour
+hg,False,User,,
+hh,False,User,"Tauranga, New Zealand",Hippie Hacker
+hi,False,Organization,,
+hj,False,User,,
+hk,False,User,"San Francisco, CA",IRL
+hl,False,User,flow.slate.press,@uberous
+hm,False,User,,
+hn,False,User,"Aachen, Germany",Bauer + Kirch GmbH
+ho,False,User,,
+hp,False,User,"Bergen, Norway",
+hq,False,Organization,,
+hr,False,User,A Galaxy Far Far Away,
+hs,False,User,Japan,
+ht,False,User,,
+hu,False,User,China,
+hv,False,User,"Beijing, China",
+hw,False,User,Singapore,
+hx,False,User,"Sydney, Australia",Hx
+hy,False,User,,
+hz,False,User,"Beijing, China",
+ia,False,User,,
+ib,False,User,,
+ic,False,User,Tokyo,
+id,False,User,Stockholm,Spotify
+ie,False,Organization,,
+if,False,User,,
+ig,False,User,,
+ih,False,User,,
+ii,False,Organization,,
+ij,False,User,,
+ik,False,User,Ankara,Onedio.com
+il,False,Organization,,
+im,False,User,Shenzhen / China,PingAn
+in,False,User,Toronto,Snap Inc
+io,False,Organization,,
+ip,False,User,,
+iq,False,User,,
+ir,False,User,,
+is,False,User,"Beijing, China",
+it,False,User,,
+iu,False,User,,
+iv,False,User,,
+iw,False,User,,
+ix,False,User,"Leeds, UK",
+iy,False,User,Thailand,Ratz
+iz,False,User,,
+ja,False,User,"London/Ramsgate, UK",Tailored
+jb,False,User,,
+jc,False,User,"Medford, MA",@ZaiusInc
+jd,False,User,"Paris, France",@DataDog  + @Mergifyio 
+je,False,User,United States,
+jf,False,User,"Singapore, Singapore",
+jg,False,User,,
+jh,False,User,San Francisco,
+ji,False,User,,
+jj,False,User,"Granada, Spain, Europe",
+jk,False,User,"Hamburg, Germany",@milchundzucker 
+jl,False,User,"San Francisco, California",
+jm,False,User,"Orlando, FL",@sequoiacapital
+jn,False,User,,
+jo,False,User,Berlin,
+jp,False,User,Montreal,
+jq,False,User,,ant financial
+jr,False,User,,
+js,False,User,"Oslo, Norway",@kolonialno 
+jt,False,User,"Palo Alto, CA",
+ju,False,User,,
+jv,False,User,,
+jw,False,User,"Antwerp, Belgium",ElevenBits
+jx,False,User,Atlanta GA,The Cloudy Group
+jy,False,User,,
+jz,False,User,,
+ka,False,User,Canada,
+kb,False,User,"Providence, RI",@digits 
+kc,False,Organization,,
+kd,False,User,,
+ke,False,User,,
+kf,False,Organization,,
+kg,False,User,"San Jose, CA",
+kh,False,User,,
+ki,False,User,"Palo Alto, CA",
+kj,False,User,New Zealand,@lucidnz 
+kk,False,User,"Wellington, NZ",
+kl,False,User,Sweden,
+km,False,Organization,,
+kn,False,User,San Francisco,"Color Genomics, Inc."
+ko,False,User,,
+kp,False,User,New York,
+kq,False,Organization,,
+kr,False,User,,
+ks,False,User,,
+kt,False,User,,
+ku,False,User,Tokyo,
+kv,False,User,,
+kw,False,User,,
+kx,False,User,Hong Kong,N3krozoft Ltd
+ky,False,User,Japan,
+kz,False,User,"London, United Kingdom",Google
+la,False,User,Los Angeles,
+lb,False,User,The Cloud,
+lc,False,User,"Minnesota, USA",@lynxsecurity 
+ld,False,User,,
+le,False,User,"San Jose, CA",
+lf,False,User,"Los Angeles, California",@GameGen / @secondgarage
+lg,False,User,"San Francisco, CA",@envoy 
+lh,False,User,,
+li,False,User,"New York, NY",
+lj,False,User,,
+lk,False,User,NY | CT,Yale University
+ll,False,User,China,@starmaker
+lm,False,User,"Brno, Czech Republic",
+ln,False,User,,
+lo,False,User,Hamburg,@adtriba 
+lp,False,User,Montréal,
+lq,False,User,,
+lr,False,User,New York City,Self
+ls,False,Organization,,
+lt,False,User,UK,
+lu,False,User,,
+lv,False,User,"Vancouver, British Columbia, Canada",
+lw,False,User,Paris,@facebook
+lx,False,User,"Melbourne, Australia",
+ly,False,User,"Guangzhou,China",
+lz,False,User,Hawaii,
+ma,False,User,,
+mb,False,User,,
+mc,False,User,"Nuremberg, Germany (EDDN)",@Teamix @Proact
+md,False,User,,
+me,False,User,,
+mf,False,User,Canada,
+mg,False,User,Reykjavík,
+mh,False,User,"san francisco, ca",design @ jawbone
+mi,False,User,,
+mj,False,User,"Aachen, Germany",Bauer + Kirch GmbH
+mk,False,User,Berlin,@nextjournal
+ml,False,User,Warsaw,@Jobartis 
+mm,False,User,Canada,
+mn,False,User,Philadelphia,
+mo,False,User,Sweden,
+mp,False,User,London,
+mq,False,User,,
+mr,False,User,,
+ms,False,User,,
+mt,False,User,NYC,EVEN
+mu,False,User,"Antwerp, Belgium",
+mv,False,User,São Paulo - Brasil,
+mw,False,User,"Seattle, WA",ExtraHop Networks
+mx,False,User,,
+my,False,User,,
+mz,False,User,"Paris, France",Gandi
+na,False,User,"Eugene, Or",Predictive Engineering
+nb,False,User,"Sofia, Bulgaria",@Automattic 
+nc,False,User,"London, U.K.",
+nd,False,User,,
+ne,False,User,,ne Digital
+nf,False,User,,
+ng,False,User,"mountain view, ca",google
+nh,False,User,,
+ni,False,Organization,,
+nj,False,User,Denmark,
+nk,False,User,,
+nl,False,User,"Paris, France",
+nm,False,User,,
+nn,False,User,"New York, NY",Demon 9 Software
+no,False,User,,
+np,False,User,"Angers, France",
+nq,False,User,,
+nr,False,User,,Industrial Light + Magic
+ns,False,User,"San Francisco, CA",
+nt,False,User,United States,Lyft
+nu,False,Organization,,
+nv,False,User,San Francisco,@apple
+nw,False,User,,
+nx,False,User,,
+ny,False,Organization,,
+nz,False,User,"Austin, TX",One More Cloud
+oa,False,Organization,,
+ob,False,User,Bay Area,
+oc,False,User,"Oslo, Norway",UPPERCASE
+od,False,User,,
+oe,False,User,Gallifrey,Time Lord
+of,False,User,,
+og,False,Organization,,
+oh,False,User,Florida,
+oi,False,Organization,,
+oj,False,User,Australia,Beyond Binary Pty Ltd
+ok,False,User,Berlin,
+ol,False,User,,
+om,False,User,,
+on,False,User,"Saint-Petersburg, Russia",
+oo,False,User,,
+op,False,User,"Luleå, Sweden",
+oq,False,User,"Jakarta, Indonesia",
+or,False,User,,
+os,False,User,"Sydney, Australia",
+ot,False,User,San Francisco,Facebook
+ou,False,Organization,,
+ov,False,User,,
+ow,False,User,Toronto,Shopify
+ox,False,User,"New York, NY",
+oy,False,User,,
+oz,False,User,Earth,@urbancampus 
+pa,False,User,"Chennai, India",@Flux7Labs
+pb,False,User,Żyrardów,4 Code
+pc,False,User,San Francisco,Stripe
+pd,False,User,,
+pe,False,User,,
+pf,False,User,,
+pg,False,User,"Saint Louis, MO",World Wide Technology
+ph,False,User,Montreal,Elastic
+pi,False,User,,
+pj,False,User,"San Francisco, USA",@Revfluence 
+pk,False,User,London/Prague,"Fry-IT, Ltd."
+pl,False,User,London,
+pm,False,User,,
+pn,False,User,,
+po,False,User,"Lawrence, KS",
+pp,False,User,,
+pq,False,User,,
+pr,False,User,NYC,@capitalrx
+ps,False,User,,
+pt,False,User,,
+pu,False,User,,
+pv,False,User,,
+pw,False,User,"Albuquerque, NM",
+px,False,User,,
+py,False,User,,
+pz,False,User,,
+qa,False,Organization,,
+qb,False,User,Tokyo,
+qc,False,User,,
+qd,False,User,,
+qe,False,User,"Nashville, TN, USA",Vanderbilt University
+qf,False,Organization,,
+qg,False,User,Earth.,
+qh,False,User,,
+qi,False,User,,
+qj,False,User,London,Imperial College London
+qk,False,User,Germany,
+ql,False,User,"Moscow, Russia",
+qm,False,User,China,
+qn,False,User,,
+qo,False,User,,
+qp,False,Organization,,
+qq,False,User,,
+qr,False,User,,
+qs,False,User,London,@feedstock
+qt,False,Organization,,
+qu,False,User,,
+qv,False,User,,
+qw,False,User,,
+qx,False,User,,
+qy,False,User,,
+qz,False,User,"Shanghai,China",
+ra,False,User,,
+rb,False,User,,
+rc,False,User,,
+rd,False,User,,
+re,False,User,United States,
+rf,False,User,"Brooklyn, NY",Oden Technologies
+rg,False,User,,
+rh,False,User,"Amsterdam, The Netherlands",Vrije Universiteit Amsterdam
+ri,False,User,Melbourne,
+rj,False,User,London,
+rk,False,User,Eastern United States,@woodstreet
+rl,False,User,,
+rm,False,User,Bangalore,
+rn,False,User,Cambridge,
+ro,False,User,,
+rp,False,User,,
+rq,False,Organization,,
+rr,False,Organization,,
+rs,False,User,"Silicon Valley, California, USA",Netflix
+rt,False,User,"Honolulu, HI /  Palo Alto, CA USA",
+ru,False,Organization,,
+rv,False,User,Lyon,
+rw,False,User,,CTO
+rx,False,User,"Traverse City, MI",@geotix
+ry,False,User,New York City,@denoland 
+rz,False,User,"New York, NY",
+sa,False,User,,
+sb,False,Organization,,
+sc,False,User,,
+sd,False,User,New York City,ArepaLabs
+se,False,User,,@monofor 
+sf,False,User,,
+sg,False,User,"Austin, TX, USA",
+sh,False,User,,
+si,False,User,"Crick, UK",WorldFirst
+sj,False,User,"Oxford, UK",GitHub
+sk,False,User,,
+sl,False,User,,
+sm,False,Organization,,
+sn,False,User,The Internet,Apollo Black Ltd
+so,False,User,,
+sp,False,User,NYC,
+sq,False,Organization,,
+sr,False,User,Europe,@salesforce
+ss,False,User,"Los Angeles, CA",
+st,False,User,"Geneva, Switzerland",
+su,False,User,Chicago,
+sv,False,User,,
+sw,False,User,,
+sx,False,User,"Austin, Texas",X.Commerce
+sy,False,User,Bodrum,
+sz,False,User,Melbourne,
+ta,False,User,Denmark,QuickPay
+tb,False,User,Poland,SoftKraft
+tc,False,User,"san francisco, ca",wework
+td,False,User,Lancaster,@yordasgroup 
+te,False,User,,
+tf,False,User,Cologne,Codevise Solutions
+tg,False,User,,
+th,False,User,,
+ti,False,User,Singapore,
+tj,False,User,"London, UK",Apex
+tk,False,User,Köln,@trustedshops 
+tl,False,User,California,@TL
+tm,False,User,Poland,Republika Ostrowska
+tn,False,User,Kazan,
+to,False,User,,
+tp,False,User,Hamburg/Munich,@LunaONE
+tq,False,User,,
+tr,False,Organization,,
+ts,False,User,Seattle,
+tt,False,User,"Copenhagen, Denmark",@heroku
+tu,False,User,,
+tv,False,User,"Oulu, Finland",
+tw,False,User,"London, UK",
+tx,False,User,,
+ty,False,User,San Francisco,klamr.to
+tz,False,User,Arsenal of Technocracy,
+ua,False,User,,
+ub,False,User,,
+uc,False,User,,
+ud,False,User,,
+ue,False,User,Istanbul,kendi isinin patronu'n da calisiyor
+uf,False,Organization,,
+ug,False,User,Japan,Transcosmos research and develop Inc.
+uh,False,User,,@thingful 
+ui,False,User,,
+uj,False,User,,
+uk,False,Organization,,
+ul,False,User,Sydney,@atlassian
+um,False,Organization,,
+un,False,User,,
+uo,False,User,,
+up,False,User,Earth,Freelance Javascript Engineer
+uq,False,User,,
+ur,False,User,,
+us,False,User,Mugla,
+ut,False,User,Germany,3+x
+uu,False,User,"Russia, Moscow",@megaplan 
+uv,False,User,,
+uw,False,User,,
+ux,False,User,"Kiev, Ukraine",@SphereSoftware 
+uy,False,User,Istanbul / Turkiye,itelligenceTR
+uz,False,User,,
+va,False,Organization,,
+vb,False,User,Stockholm,
+vc,False,User,,
+vd,False,User,,
+ve,False,User,,
+vf,False,User,,
+vg,False,User,Internet,@vg @illinois @FOSSRIT
+vh,False,User,"Minsk, Belarus",
+vi,False,User,Republic of Belarus,
+vj,False,User,,
+vk,False,User,,
+vl,False,User,Russia,
+vm,False,User,"Cambridge, MA",Drift
+vn,False,User,,
+vo,False,User,,
+vp,False,User,,
+vq,False,User,"Kalmar, Sweden",
+vr,False,User,"Lyon, France",Vanoix
+vs,False,User,"Prague, Czech Republic",TMate Software s.r.o.
+vt,False,User,"Brussels, Belgium",
+vu,False,User,"Los Angeles, California",AAXIS Group
+vv,False,User,,
+vw,False,User,,
+vx,False,Organization,,
+vy,False,User,The Netherlands,
+vz,False,User,,
+wa,False,User,"York, UK",
+wb,False,User,"New York, NY",Project Franklin @ Walmart
+wc,False,User,,
+wd,False,User,"Beijing, China",wdicc
+we,False,User,,
+wf,False,User,,
+wg,False,User,,
+wh,False,User,,
+wi,False,User,,
+wj,False,User,,
+wk,False,User,,
+wl,False,User,,
+wm,False,User,"Luxembourg, Luxembourg",iorahealth.com
+wn,False,User,,
+wo,False,User,"Berlin, Germany",
+wp,False,User,"Seattle, WA",Whitepages Inc.
+wq,False,Organization,,
+wr,False,User,,
+ws,False,User,"Los Angeles, CA",Will Smidlein
+wt,False,User,Silicon Valley,
+wu,False,User,,
+wv,False,User,Seattle,Amazon.com
+ww,False,Organization,,
+wx,False,User,,
+wy,False,User,Deansgate,
+wz,False,User,California,
+xa,False,User,,
+xb,False,User,,
+xc,False,User,Oslo,
+xd,False,User,,
+xe,False,User,Montreal,
+xf,False,User,,
+xg,False,User,Shanghai,
+xh,False,Organization,,
+xi,False,User,,
+xj,False,User,,
+xk,False,User,España,
+xl,False,Organization,,
+xm,False,User,San Francisco / Bay Area,Clover
+xn,False,User,"New Orleans, LA",Trosclairity
+xo,False,Organization,,
+xp,False,User,Bangalore,InMobi
+xq,False,User,,
+xr,False,User,,
+xs,False,User,New York,
+xt,False,Organization,,
+xu,False,User,,
+xv,False,User,"British Columbia, Canada",
+xw,False,User,"San Francisco, CA",
+xx,False,User,,
+xy,False,User,,
+xz,False,Organization,,
+ya,False,User,,
+yb,False,User,,
+yc,False,User,"Melbourne, Australia",
+yd,False,User,,
+ye,False,User,"New York, NY, USA",
+yf,False,User,,
+yg,True,404,,
+yh,False,User,,
+yi,False,User,Singapore,
+yj,False,User,Australia,
+yk,False,User,,
+yl,False,User,"Wuhan, China",
+ym,False,User,AS15-PAPA-09,@misakaio
+yn,False,User,,
+yo,False,User,CN,
+yp,False,User,"Bergamo, Italy",Università degli Studi di Milano-Bicocca
+yq,False,User,,
+yr,False,Organization,,
+ys,False,User,France,Heroku
+yt,False,User,Turkey,
+yu,False,User,,
+yv,False,User,,
+yw,False,User,,
+yx,False,User,,
+yy,False,User,"Bloomington, IN",
+yz,False,User,,
+za,False,User,"Jakarta, Indonesia",
+zb,False,User,,
+zc,False,Organization,,
+zd,False,User,,
+ze,False,User,"New York, NY",
+zf,False,User,,
+zg,False,User,"Cupertino, CA",@apple
+zh,False,User,JAPAN,
+zi,False,User,,
+zj,False,User,"College Park, MD",Joint Quantum Institute @JQIamo 
+zk,False,User,"San Francisco, CA",On Vacation
+zl,False,User,,
+zm,False,User,"Tokyo, Japan","Tsubaiso, Inc."
+zn,False,User,"Krasnoyarsk, Russia",
+zo,False,User,Marseille,
+zp,False,User,,
+zq,False,User,"Shanghai, China",SJTU
+zr,False,User,,
+zs,False,Organization,,
+zt,False,User,,
+zu,False,User,Switzerland,
+zv,False,User,"San Diego, CA",@polyswarm
+zw,False,User,,
+zx,False,User,,
+zy,False,User,,
+zz,False,User,Japan,
