@@ -32,9 +32,8 @@ numLetters = 1
 
 # Creates a CSV file in the current working directory
 import csv
-csvLabel = '1LetterGitHubUsernamesTest'
+csvLabel = 'gitHubUsernameData'
 csvName = '/' + csvLabel + '.csv'
-# csvName = '/' + input('Name the CSV file with the username data: ') + '.csv'
 csvFile = path + csvName
 csvFileOpen = open(csvFile, 'w')
 csvWriter = csv.writer(csvFileOpen)
